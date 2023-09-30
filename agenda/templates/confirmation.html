@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        body {
+            background-color: #dd3d3d1a; /* Cor de fundo para todo o corpo */
+        }
+        .content {
+            background-color: #fff; /* Cor de fundo para a região de conteúdo */
+            padding: 20px; /* Espaçamento interno da região de conteúdo */
+        }
+        h1 {
+            font-size: 24px;
+            color: #333; /* Cor do texto do título */
+        }
+        p {
+            font-size: 13px;
+            margin: 5px 0; /* Espaçamento entre os parágrafos */
+        }
+    </style>
+
+    <title>SignIn</title>
+</head>
+<body>
+    <h1>Confirmação</h1>
+    <br>
+    <p>Agenda Salva</p>
+    <br>
+    <p>Usuário: {{resp_agenda_user}}</p>
+    <br>
+    <p>14:00h-16:00h - 13.10 - sexta-feira: {{atv1}}</p>
+    <p>16:40h-18:30h - 13.10 - sexta-feira: {{atv2}}</p>
+    <p>08:40h-10:30h - 14.10 - sábado: {{atv3}}</p>
+    <p>10:40h-12:30h - 14.10 - sábado: {{atv4}}</p>
+    <p>14:30h-16:20h - 14.10 - sábado: {{atv5}}</p>
+    <p>17:10h-19:00h - 14.10 - sábado: {{atv6}}</p>
+    <p>08:30h-10:00h - 15.10 - domingo: {{atv7}}</p>
+    <p>10:10h-11:40h - 15.10 - domingo: {{atv8}}</p>
+    
+    <a href="javascript:history.back()">Voltar</a>
+
+    
+    
+</body>
+</html>

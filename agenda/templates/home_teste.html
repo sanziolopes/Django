@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Agenda</title>
+</head>
+<body>
+    <h1>Agenda de Eventos</h1>
+    <h2>Olá {{nome}}, joia?</h2>
+    {% comment %} <img src="{% static 'background.jpg'%}"> {% endcomment %}
+    <h2>14:00h-16:00h - 13.10 - sexta-feira</h2>
+    <form action="{% url 'home' %}" method="POST">{% csrf_token %}
+        
+        <input type="radio" id="contactChoice1" name="1" value="Mandala" />
+        <label for="contactChoice1">Mandala</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="1" value="Porta ATC" />
+        <label for="contactChoice2">Porta ATC</label>
+        <br>
+
+    <h2>16:40h-18:30h - 13.10 - sexta-feira</h2>
+    
+        <input type="radio" id="contactChoice1" name="2" value="Cactus" />
+        <label for="contactChoice1">Cactus</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="2" value="Tess 1" />
+        <label for="contactChoice2">Tess 1</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="2" value="Museo de Arte de Bolsillo" />
+        <label for="contactChoice3">Museo de Arte de Bolsillo</label>
+    
+    <h2>08:40h-10:30h - 14.10 - sábado</h2>
+    
+        <input type="radio" id="contactChoice1" name="3" value="Moldura" />
+        <label for="contactChoice1">Moldura</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="3" value="Tess" />
+        <label for="contactChoice2">Tess</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="3" value="Kusudama" />
+        <label for="contactChoice3">Kusudama</label>
+    
+    <h2>10:40h-12:30h - 14.10 - sábado</h2>
+    
+        <input type="radio" id="contactChoice1" name="4" value="Mandala" />
+        <label for="contactChoice1">Mandala</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="4" value="Broto de Papel" />
+        <label for="contactChoice2">Broto de Papel</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="4" value="Bordado" />
+        <label for="contactChoice3">Bordado</label>
+    
+    <h2>14:30h-16:20h - 14.10 - sábado</h2>
+    
+        <input type="radio" id="contactChoice1" name="5" value="RuBa III" />
+        <label for="contactChoice1">RuBa III</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="5" value="Estrela Machi" />
+        <label for="contactChoice2">Estrela Machi</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="5" value="Bordado" />
+        <label for="contactChoice3">Bordado</label>
+    
+    <h2>17:10h-19:00h - 14.10 - sábado</h2>
+    
+        <input type="radio" id="contactChoice1" name="6" value="Flor de froissage" />
+        <label for="contactChoice1">Flor de froissage</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="6" value="Chinese thread book" />
+        <label for="contactChoice2">Chinese thread book</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="6" value="Rosa" />
+        <label for="contactChoice3">Rosa</label>
+    
+    <h2>08:30h-10:00h - 15.10 - domingo</h2>
+    
+        <input type="radio" id="contactChoice1" name="7" value="RuBa I" />
+        <label for="contactChoice1">RuBa I</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="7" value="Porta óculos" />
+        <label for="contactChoice2">Porta óculos</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="7" value="Floco de neve" />
+        <label for="contactChoice3">Floco de neve</label>
+    
+    <h2>10:10h-11:40h - 15.10 - domingo</h2>
+    
+        <input type="radio" id="contactChoice1" name="8" value="Mandala" />
+        <label for="contactChoice1">Mandala</label>
+        <br>
+        <input type="radio" id="contactChoice2" name="8" value="Caixa" />
+        <label for="contactChoice2">Caixa</label>
+        <br>
+        <input type="radio" id="contactChoice3" name="8" value="Bordado" />
+        <label for="contactChoice3">Bordado</label>
+        <br>
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>
