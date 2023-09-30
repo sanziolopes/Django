@@ -53,7 +53,7 @@ def index(request):
                 a6 -= 1
             if t.atv3 == 'Tess': 
                 a7 -= 1
-            if t.atv3 == 'Kusudam': 
+            if t.atv3 == 'Kusudama': 
                 a8 -= 1
             if t.atv4 == 'Mandala 2': 
                 a9 -= 1
