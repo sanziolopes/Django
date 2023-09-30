@@ -148,6 +148,13 @@ def index(request):
         else:
             atv8 = request.POST.get('8')
 
+        try:
+            register = Agenda.objects.get(user=request.POST.get('user'))
+            register.delete()
+        except:
+            pass
+        
+
         agenda = Agenda(
             atv1 = atv1,
             atv2 = atv2,
@@ -162,6 +169,7 @@ def index(request):
 
         agenda.save()
         time.sleep(1)
+
 
         resp_agenda_user = Agenda.objects.filter(user=request.POST.get('user')).last()
         

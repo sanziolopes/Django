@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <style>
+        h2 {
+            size: 10px;
+            color: #e53a27;
+        }
         body {
             background-color: #dd3d3d1a; /* Cor de fundo para todo o corpo */
         }
@@ -28,9 +32,9 @@
 <body>
     <h1>Confirmação</h1>
     <br>
-    <p>Agenda Salva</p>
+    <h1>Agenda Salva</h1>
     <br>
-    <p>Usuário: {{resp_agenda_user}}</p>
+    <h2>Usuário: {{resp_agenda_user}}</h2>
     <br>
     <p>14:00h-16:00h - 13.10 - sexta-feira: {{atv1}}</p>
     <p>16:40h-18:30h - 13.10 - sexta-feira: {{atv2}}</p>
@@ -40,8 +44,8 @@
     <p>17:10h-19:00h - 14.10 - sábado: {{atv6}}</p>
     <p>08:30h-10:00h - 15.10 - domingo: {{atv7}}</p>
     <p>10:10h-11:40h - 15.10 - domingo: {{atv8}}</p>
-    
-    <a href="javascript:history.back()">Voltar</a>
+    <br>
+    <a href="http://127.0.0.1:8000/">Voltar</a>
 
     
     

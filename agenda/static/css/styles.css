@@ -573,7 +573,7 @@ margin-bottom: 15px;
   background-size: cover;
 }
 #testimonial h2{
-color: #3B8838;
+color: #e53a27;
 }
 #testimonial h4 {
   color: #fff;
@@ -593,10 +593,6 @@ border: 1px solid rgba(255, 255, 255, 0.2);
 margin: 0 8px;
 }
 #about {
-  padding: 100px 0;
-  /* background: #07080A; */
-  /* background: url('../images/img2.jpg'); */    
-  /* background-size: cover; */  };
 }
 #about .column-title{
 color:#fff;
