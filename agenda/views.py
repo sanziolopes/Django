@@ -14,29 +14,29 @@ def index(request):
     if request.method == "GET":
         table = Agenda.objects.all()
 
-        a1 = 11
-        a2 = 11
+        a1 = 17
+        a2 = 17
         a3 = 11
         a4 = 11
         a5 = 11
         a6 = 11
         a7 = 11
         a8 = 11
-        a9 = 11
-        a10 = 11
-        a11 = 11
-        a12 = 11
-        a13 = 11
-        a14 = 11
+        a9 = 13
+        a10 = 13
+        a11 = 7
+        a12 = 13
+        a13 = 13
+        a14 = 7
         a15 = 11
         a16 = 11
         a17 = 11
         a18 = 11
         a19 = 11
         a20 = 11
-        a21 = 11
-        a22 = 11
-        a23 = 11
+        a21 = 13
+        a22 = 13
+        a23 = 7
 
         for t in table:
             if t.atv1 == 'Mandala': 
